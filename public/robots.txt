@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suaraproject.tech/sitemap.xml

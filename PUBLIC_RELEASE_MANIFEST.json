@@ -1,0 +1,786 @@
+{
+  "schemaVersion": "suara.public_release_candidate/1",
+  "status": "local_candidate_not_published",
+  "revision": "v15",
+  "fileCount": 153,
+  "generatedAt": "2026-09-29T11:08:18.2491536+08:00",
+  "license": "MIT",
+  "privacyScan": "pass",
+  "excluded": [
+    "credentials and local environment files",
+    "Vercel linkage metadata",
+    "stakeholder emails and Drive documents",
+    "Claude conversation records",
+    "private strategy and project-management documents",
+    "participant audio, transcripts and recordings",
+    "generated deck, video and browser evidence files"
+  ],
+  "evidenceBoundary": "Local public-release candidate only; not a GitHub publication, deployed application or hackathon submission.",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 392,
+      "sha256": "1ea23cae011aa6ba85c9fad28179eeb99614ffb8e926242cccbd3c59a33643b2"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1561,
+      "sha256": "0bb4d8f23933c6fb42961deb646cfa2697d446178e449faa9b7616736f8102d7"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 390,
+      "sha256": "695e27c1a2c4a0e127aa45bc5fe2ae8843564b444d7660de5269ec491e9d5a9f"
+    },
+    {
+      "path": ".vercelignore",
+      "bytes": 447,
+      "sha256": "f3c56b4bdad62ad9d1c211315d0ba554f8ebac0d7ec3e2138914de177756d58c"
+    },
+    {
+      "path": "api/capabilities.js",
+      "bytes": 159,
+      "sha256": "0007377062effc04976b89fdba310058e40f6e085989ed9f2823650511a12c36"
+    },
+    {
+      "path": "api/health.js",
+      "bytes": 132,
+      "sha256": "168b5a6a47f8a8bacfff385994e4d5d68b764c5552909f988acc0c4a5bfefd30"
+    },
+    {
+      "path": "api/interview/question.js",
+      "bytes": 168,
+      "sha256": "165dada8bec2b09b5a423226c709e00400e64e81ee5ccd77c7192f4a266b7750"
+    },
+    {
+      "path": "api/session.js",
+      "bytes": 154,
+      "sha256": "f3c31773b3ddae221cedd2e1d6c92cc4acf52463a87af965bef784d55e0c4540"
+    },
+    {
+      "path": "api/streaming/token.js",
+      "bytes": 165,
+      "sha256": "943607ddfc4be7f96ef754b531a37a10df1ea5736666f7d0713f99b09a48c2d6"
+    },
+    {
+      "path": "api/voice/token.js",
+      "bytes": 161,
+      "sha256": "c225230f4295cef5c0de30e42f61f3a2dca152ce8a5ce5932d75d25c16d56409"
+    },
+    {
+      "path": "deploy/oracle/bootstrap-oracle-linux.sh",
+      "bytes": 2939,
+      "sha256": "e7ead201c3cb5d81e37c40fe1bab0aa9538c339dd9f210512cfc9d16e614ab80"
+    },
+    {
+      "path": "deploy/oracle/enable-tls.sh",
+      "bytes": 2993,
+      "sha256": "4aac5439fc4fc429f8e8533218d0503fd2a4bc8740a6eecf85bf17b42ad3bca5"
+    },
+    {
+      "path": "deploy/oracle/install-voice-facade.sh",
+      "bytes": 4274,
+      "sha256": "44feaae2abdc9882da4ea9d8ec5b9303b76d5a1f34115b5a03c2b18c9090130e"
+    },
+    {
+      "path": "deploy/oracle/nginx-suara-demo-tls.conf",
+      "bytes": 3288,
+      "sha256": "d0a6688490dce1fd38f30b144f644c8537ad6d0ff8318e460e61135480df8cca"
+    },
+    {
+      "path": "deploy/oracle/nginx-suara-demo.conf",
+      "bytes": 2689,
+      "sha256": "95cd34d6a0f2eb5d0d749dae211dd9373be207a97c4e8cace629a705848c9b9f"
+    },
+    {
+      "path": "deploy/oracle/publish-release.sh",
+      "bytes": 5698,
+      "sha256": "12a749a7aa98b91a4247f5e104f641dfb20c6a8e8b1f528b4efd6df78e6e64a0"
+    },
+    {
+      "path": "deploy/oracle/README.md",
+      "bytes": 12626,
+      "sha256": "e830df05d1c689b6ecaadec7f31de951a7c4e902baec308599956a7dbc9329dc"
+    },
+    {
+      "path": "deploy/oracle/rollback-release.sh",
+      "bytes": 3113,
+      "sha256": "c2bb9521419d07357f4ababb1cbd1012ca770568ffca1bab113ea9d43503a7b7"
+    },
+    {
+      "path": "deploy/oracle/suara-voice.env.example",
+      "bytes": 548,
+      "sha256": "3232613c9da44e4f54a675689f8a11eb02d21fdb963dc764c457176ee9df3a92"
+    },
+    {
+      "path": "deploy/oracle/suara-voice.service",
+      "bytes": 900,
+      "sha256": "9afb0e91c245f269471c98067765d8cbee492828b0b838ed198c2dd0afb2b0fb"
+    },
+    {
+      "path": "design/concept-hero-process.png",
+      "bytes": 1749981,
+      "sha256": "0de7820b7f0a2d169a802e097720a3736015fc642f88466f21c7a5a769b553c9"
+    },
+    {
+      "path": "design/concept-research-footer.png",
+      "bytes": 1267971,
+      "sha256": "3efc3af1a25c8473f21d5a058c5271ed8e688cfd1a625534dc9b323f4f19f11d"
+    },
+    {
+      "path": "design/concept-trust-languages.png",
+      "bytes": 1331359,
+      "sha256": "21f65123268760aefdf7748e64445797073da944795a02dd2f98532953cbaee4"
+    },
+    {
+      "path": "docs/ACCURACY_WORKFLOW_2026-09-29.md",
+      "bytes": 7457,
+      "sha256": "d38cba26ba9f94e9fe22dcf3706b536c314373ef4871391203dd163a98a82c76"
+    },
+    {
+      "path": "docs/evidence/asr-public-pilot-2026-09-29.json",
+      "bytes": 23735,
+      "sha256": "8a123aa11c58859c6e3508243d09d3a29656e3e452c6250775219f072e63d4ff"
+    },
+    {
+      "path": "docs/submission-metadata.json",
+      "bytes": 5979,
+      "sha256": "12d0a39936c1299e5a9cb9037c45f72ce60dcdf05db524d44c4f286c8d0a06e5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1905,
+      "sha256": "e1212e9dcb050e14b647091c93dccf0f780c7a0c23c5d2c461190d4c63beef0b"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1097,
+      "sha256": "27a089185522ed78359aa732fa142f58bfd63baafdc5da05bc18a709a79cd1a6"
+    },
+    {
+      "path": "licenses/suara-question-bank-MIT.txt",
+      "bytes": 1097,
+      "sha256": "27a089185522ed78359aa732fa142f58bfd63baafdc5da05bc18a709a79cd1a6"
+    },
+    {
+      "path": "licenses/synthetic-audio-provenance.md",
+      "bytes": 1449,
+      "sha256": "ed2ddc60846f2b381c117a2495dccddafa49d9fec47f062f1ca76a70c4fe8d15"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1354,
+      "sha256": "d0787325aaa2d8fd96181465d75c15859d60aa6d1599aeb7c8ab4cf7455d55d3"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 17461,
+      "sha256": "2c92893f96ba597bc6991a34f8154c531e00f658dc3e5f0aa0e16a6f500a7d69"
+    },
+    {
+      "path": "prototype/index.html",
+      "bytes": 1315,
+      "sha256": "f2d8d3dc3f138dc8b779721a11f54449a154721eec14ea6f757340820f2fc264"
+    },
+    {
+      "path": "public/assets/hero-family-album.webp",
+      "bytes": 108036,
+      "sha256": "da0cb05a2835e181a49b1ba6e98330c848bf96e7dbe56bb6fbc6cc440764af70"
+    },
+    {
+      "path": "public/assets/synthetic/en-family-memory.wav",
+      "bytes": 537740,
+      "sha256": "70e197d9c7ceece0a19e7d44f1ffd1926cc6d54f9e829085b0a1c4a07f065ac6"
+    },
+    {
+      "path": "public/assets/synthetic/ms-family-memory.wav",
+      "bytes": 713996,
+      "sha256": "d7014fdec8cd70a71a4d40ff0d5f0f83779c4f31fd5ac90951b7c210f645cb15"
+    },
+    {
+      "path": "public/assets/synthetic/zh-family-memory.wav",
+      "bytes": 490508,
+      "sha256": "44116ff1853e8a3dc154dc4534882add0b04886769f8c8838ff900ad7c81189d"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 295,
+      "sha256": "94267046f57f6482513a83a7d6db163799a9b87760c212b7ed30632205eb2ebc"
+    },
+    {
+      "path": "public/licenses/suara-question-bank-MIT.txt",
+      "bytes": 1097,
+      "sha256": "27a089185522ed78359aa732fa142f58bfd63baafdc5da05bc18a709a79cd1a6"
+    },
+    {
+      "path": "public/robots.txt",
+      "bytes": 75,
+      "sha256": "b35c8f5fb1ed0fcff526b66a726491335f775e1dc70adbfd58c2020454b0bd5e"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 243,
+      "sha256": "592c35f3789a363c35efcd20ca5effaf8b95d8f4831a97617aadacdf54d240b7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3675,
+      "sha256": "1a9ffdd44d8991fefe01c660741280529702cdb53da6ece725a33520df929069"
+    },
+    {
+      "path": "scripts/asr-metrics.mjs",
+      "bytes": 1186,
+      "sha256": "9e7c71dececbc2dfb664a60e299bef93897419426a980aaffcc385ceba8fb7b6"
+    },
+    {
+      "path": "scripts/benchmark-validate.mjs",
+      "bytes": 16607,
+      "sha256": "250e6db153f6419543b914ba205ea86ad44230863b3274b02ea1d7f7ba4f2262"
+    },
+    {
+      "path": "scripts/Deploy-OracleDemo.ps1",
+      "bytes": 6163,
+      "sha256": "362b441600caf6657cae93b83e3e78975e5e187a046d54eccbafc5a2a4359d61"
+    },
+    {
+      "path": "scripts/evaluate-asr.mjs",
+      "bytes": 7998,
+      "sha256": "0c40c2a947c545a23867dd239e93b7c4a17753ef9d24d6fb4ddf78d144e7eb2d"
+    },
+    {
+      "path": "scripts/generate-showcase-audio.mjs",
+      "bytes": 2910,
+      "sha256": "510dccceb3382f69d5b3ce0a7f8c351334a539508bb0bcc76398ffaa48ad9eec"
+    },
+    {
+      "path": "scripts/hosted-acceptance.mjs",
+      "bytes": 9269,
+      "sha256": "1026d89c3059747c2ea52e4cccb01cd9edd1fea3b96e836dd5b41368045cd0f3"
+    },
+    {
+      "path": "scripts/init-vercel-state.mjs",
+      "bytes": 9218,
+      "sha256": "d61c14bdec7154ab7c43b922afc15c41d498ca6c2fc7a006598a8def5028395d"
+    },
+    {
+      "path": "scripts/pause-frame-pacer.mjs",
+      "bytes": 3443,
+      "sha256": "45576abacc4be4d67f6d2f3dd880aab5845f490ae0c9cfd68405048b58ca887c"
+    },
+    {
+      "path": "scripts/prepare-accuracy-data.mjs",
+      "bytes": 4154,
+      "sha256": "e8e6f6bc03f59eaca6ccfa00d871dc271313158cd1e527236e32abf05fc8e9c4"
+    },
+    {
+      "path": "scripts/prepare-canary-access.mjs",
+      "bytes": 9106,
+      "sha256": "55f78498ea16db2afb54657c573d2811b2b949380765415a4b05666d08b894e5"
+    },
+    {
+      "path": "scripts/qa-hosted-acceptance.mjs",
+      "bytes": 974,
+      "sha256": "9a9a671c8be2a2ad473c85ddf2093ef3b4ba78eb0c82db6fac013313fe5ce5f8"
+    },
+    {
+      "path": "scripts/qa-landing-browser.js",
+      "bytes": 2113,
+      "sha256": "8c0767674deb7a2483975ac84620b301e37b8c330a960324ef545290d96cdd1c"
+    },
+    {
+      "path": "scripts/qa-live-provider-browser.js",
+      "bytes": 23561,
+      "sha256": "5330dee1306f71fda33bc377f4f24bd6bc2a76d821189c327af53e56ed20a029"
+    },
+    {
+      "path": "scripts/qa-operator-browser.js",
+      "bytes": 8853,
+      "sha256": "c3d4ef9e5f297d0b06766f96bf34c02d1df84e40f8c2b2728e992173e9216d4b"
+    },
+    {
+      "path": "scripts/qa-provider-pause.mjs",
+      "bytes": 23697,
+      "sha256": "33b8476715d662a49e8ed19f6334163ee630fc6c8aa6b4858503845d1b8c95b9"
+    },
+    {
+      "path": "scripts/qa-redis-engine.mjs",
+      "bytes": 32078,
+      "sha256": "dd18b9f7dbbc3ca5eff5bc27feb23d0c78521d732989862cb6f4ba4337ed377c"
+    },
+    {
+      "path": "scripts/qa-submission-preflight.mjs",
+      "bytes": 862,
+      "sha256": "f6f7875f7c785e5048800c275711c6d8752900aa692056f7cc02a73272e07ab2"
+    },
+    {
+      "path": "scripts/qa-synthesize-pause.ps1",
+      "bytes": 1565,
+      "sha256": "9ed5139005f73ca7da1489d34a998e2e0333afe8181ae479d1bf51ef4cf6c851"
+    },
+    {
+      "path": "scripts/qa-voice-browser.js",
+      "bytes": 11811,
+      "sha256": "c3040624574e6ecfd62368eb2f46ec67a0f20dcb4d03a7aadee9527aa310dd3f"
+    },
+    {
+      "path": "scripts/qa-voice-layout.js",
+      "bytes": 1291,
+      "sha256": "dda72c0152618ea55be13b72636af561513710eaf3d287142142b1180aced51c"
+    },
+    {
+      "path": "scripts/submission-preflight.mjs",
+      "bytes": 10446,
+      "sha256": "d3663b30559d1179d73388ae134837bffb351eb82f599123a52106e2090c808e"
+    },
+    {
+      "path": "scripts/validate-build-isolation.mjs",
+      "bytes": 1493,
+      "sha256": "62625c017df6537c7c1f90644d3905062995bd1e29d0871de8b605c5dbcfa5d1"
+    },
+    {
+      "path": "scripts/validate-public-build.mjs",
+      "bytes": 2710,
+      "sha256": "ffcc96bf932188cd52182d0a935a83dfd0218440e9e32e7a4352c061c38bfff5"
+    },
+    {
+      "path": "scripts/validate-vercel-build.mjs",
+      "bytes": 3035,
+      "sha256": "b63480f1fe3d3224bb66eb479aec1b5470ab1c78f3a23d1498a60a5db7215e2e"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 6656,
+      "sha256": "f42a21edb17d1182152881f1afc0eb91a28603342605426f10721db211b198e4"
+    },
+    {
+      "path": "server/question-request.mjs",
+      "bytes": 4452,
+      "sha256": "a0df5eda6f18d40809adf7b76f459d3ffe90417056f72494d5a1918afcb40007"
+    },
+    {
+      "path": "server/question-selector.mjs",
+      "bytes": 8780,
+      "sha256": "f6146a98fd882443aa4b2a21e39b8387dca44ec242b43cb1ddc30342b32d961f"
+    },
+    {
+      "path": "server/vercel-health.mjs",
+      "bytes": 1309,
+      "sha256": "2c2d61bf968dd6f3f2b45eb9cea13cebf3ee5265b47779d3b923d49b2d498989"
+    },
+    {
+      "path": "server/vercel-redis-state.mjs",
+      "bytes": 20645,
+      "sha256": "8e0dc19941fbc484a9884b5c4813808794cec8072b95e7d2ab24946c505c0233"
+    },
+    {
+      "path": "server/vercel-voice.mjs",
+      "bytes": 13266,
+      "sha256": "736f16257a1707efcea0d492a57665426364ace1a5941e8112bf3401134d9ebf"
+    },
+    {
+      "path": "server/voice-facade.mjs",
+      "bytes": 29006,
+      "sha256": "57d04be808191e849ac7ec3cfcd70e8ab1cd20b503571ecd29ba483a4342ea76"
+    },
+    {
+      "path": "src/App.jsx",
+      "bytes": 29689,
+      "sha256": "620dca0987a51e6da33094c2b409c5f84ea4274d456776b01b9f4b8aed18045d"
+    },
+    {
+      "path": "src/locale.js",
+      "bytes": 720,
+      "sha256": "888c1a4e7c82908d7f3d46b0c807504bfaae084443e5484be3000ac45ffa7475"
+    },
+    {
+      "path": "src/main.jsx",
+      "bytes": 216,
+      "sha256": "874917e8ef89842d180c93ebbc80408bbdf5d9ba439256dab67678c22deab68f"
+    },
+    {
+      "path": "src/prototype-main.jsx",
+      "bytes": 249,
+      "sha256": "3e45c1de1bbce708b528ca64ceb73a9d012d0ff599a47ec279eb88aa1cfe621e"
+    },
+    {
+      "path": "src/research/operator.css",
+      "bytes": 3834,
+      "sha256": "3da41e5f35f8f5721fd1674fb50a16b5a3cce77ccd246e03514d7dab57995f69"
+    },
+    {
+      "path": "src/research/OperatorVoiceApp.jsx",
+      "bytes": 11611,
+      "sha256": "3e533e7e19461f77b065ef04ab9bff584b359f5db5baa357b7a1ad0911294f18"
+    },
+    {
+      "path": "src/research/replayClient.js",
+      "bytes": 6769,
+      "sha256": "d458cf9369af753b7a116db90419056ebdf0dcfdd6d1b4669a5dd4a4fcbd9463"
+    },
+    {
+      "path": "src/research/replayPacer.js",
+      "bytes": 9163,
+      "sha256": "9c41fd71e31a8d4e97e22b6213ed4c9001398ab4044e56e9bf1cdd9776070213"
+    },
+    {
+      "path": "src/research/ReplayPanel.jsx",
+      "bytes": 16270,
+      "sha256": "d0aee14cf78b083f741614e88f87dffb4d68ff2e4cce01b88e7d8fad2646315a"
+    },
+    {
+      "path": "src/research/replayRun.js",
+      "bytes": 11658,
+      "sha256": "468dee8f350e7d44d0cace1be0e70c783d168786e6a396056320e0bf8a4d7b76"
+    },
+    {
+      "path": "src/research/replaySource.js",
+      "bytes": 5779,
+      "sha256": "286ce51a6315fee67e5d13f1c2f083736c36862d2a014cad784a2932c23f0bbc"
+    },
+    {
+      "path": "src/research/timing.js",
+      "bytes": 12331,
+      "sha256": "f766abca56864e6cf6f846bbfb20978807798a307aecf4d9ca2ba914f8dfa968"
+    },
+    {
+      "path": "src/showcase.css",
+      "bytes": 25439,
+      "sha256": "cc094a24779a9e96482b9777e1c3494ec411f65bdd44a4eac2bf4fe5ada34ee0"
+    },
+    {
+      "path": "src/showcase/audio-manifest.json",
+      "bytes": 2214,
+      "sha256": "bcd97306f786149089ea0fd8d0b53b298ffab824b9b7a70ba610e3572561818a"
+    },
+    {
+      "path": "src/showcase/copy.js",
+      "bytes": 18141,
+      "sha256": "a81da8b65c4d0008da5dfdf61b0587cbb78b25c13b6116fa4f9aaf65d41f872b"
+    },
+    {
+      "path": "src/showcase/export.js",
+      "bytes": 966,
+      "sha256": "87cd984059e1faa533e6c057d50e0f99d12c6a1abe10e95b2feee553dafe3347"
+    },
+    {
+      "path": "src/showcase/fixture.js",
+      "bytes": 2952,
+      "sha256": "519956f717373522c72013f29890b01d4b4dc560b0d67eeb9c3d81cfbd88f2ae"
+    },
+    {
+      "path": "src/showcase/FixturePlayer.jsx",
+      "bytes": 2352,
+      "sha256": "3d8bb785afe3edbb655f2b833305ae9f906ef2274d05cab7f8ef710037916d51"
+    },
+    {
+      "path": "src/showcase/integrity.js",
+      "bytes": 1767,
+      "sha256": "e0d7eb69155ef15b8cf6581408aa5b29b155615d25853e31a043311793a41276"
+    },
+    {
+      "path": "src/showcase/ShowcaseApp.jsx",
+      "bytes": 22666,
+      "sha256": "3045a26bf968f8cfa5876f1329bb7e48ef4965adb10b1a6f67376aa919c9f133"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 18928,
+      "sha256": "f5ecc56ab3e18b326c607b69698ba66de75ed5ba2f9a650d45963f17e7c3e2c5"
+    },
+    {
+      "path": "src/voice-main.jsx",
+      "bytes": 538,
+      "sha256": "637f74634420bbffcb6adda88e673fe0badfdf7c8bfa1687963d84f24113d852"
+    },
+    {
+      "path": "src/voice/capabilities.js",
+      "bytes": 3849,
+      "sha256": "17a7fb4451a9ec89bc280d7f75e458b37846b1b54d2b03b003cf5884719b1530"
+    },
+    {
+      "path": "src/voice/copy.js",
+      "bytes": 29226,
+      "sha256": "aa023ea1716e4c8febedc43bec3ac093a8144f75ece114a76152c23ac2e106a1"
+    },
+    {
+      "path": "src/voice/patienceController.js",
+      "bytes": 13156,
+      "sha256": "3dabceca917431bbacaa8aee43bbab29c69d1af28052733b364b793d9da7447e"
+    },
+    {
+      "path": "src/voice/pcm-processor.js",
+      "bytes": 3523,
+      "sha256": "98c5cc1fd57c3de93dadabad3f5dd0ff259bc458ed146fc5aab2a9ffc3d43154"
+    },
+    {
+      "path": "src/voice/questionBank.js",
+      "bytes": 7120,
+      "sha256": "5591caf40eed9dd5c9e61745d0b167d2f6f6c8dd954d42f434d7d4c002d2da9f"
+    },
+    {
+      "path": "src/voice/questionClient.js",
+      "bytes": 7016,
+      "sha256": "64f3cf3080635546c5add65a0f0381986bbb6fc6e2e00fa630f4e6eb11de1186"
+    },
+    {
+      "path": "src/voice/review.js",
+      "bytes": 5719,
+      "sha256": "84891117904c27330483e3bdefe542f99fece52d5a3f0afeb686362efcd47927"
+    },
+    {
+      "path": "src/voice/streamingClient.js",
+      "bytes": 18101,
+      "sha256": "bf5f64b819825714da63af9a786a4fdecb3ca669df50738be958c1ba0b1bb971"
+    },
+    {
+      "path": "src/voice/streamingCopy.js",
+      "bytes": 19223,
+      "sha256": "3c8d28b56c8f44d58bd28d2bff2b9ebe3e34745264d5ed60bd3e9e1daf1038e6"
+    },
+    {
+      "path": "src/voice/transcript.js",
+      "bytes": 1919,
+      "sha256": "723a4f920c26245a2a8c699b356451d3fd9cb494b83f2be5361f4c086b5790d5"
+    },
+    {
+      "path": "src/voice/voice.css",
+      "bytes": 33183,
+      "sha256": "1f51b89323c2eb47a5162f1ef8a919b817daaa435e635c54326a6b57efb8dc96"
+    },
+    {
+      "path": "src/voice/voiceClient.js",
+      "bytes": 26999,
+      "sha256": "58597d2fb9169678d7de5e69b01e6a1e1335be8435bd09763f47bea8088efa76"
+    },
+    {
+      "path": "src/voice/VoiceDemoApp.jsx",
+      "bytes": 38339,
+      "sha256": "bc6ec7354508b57ad7c6edf395d246bede1d8edc79f3705f9eb4f920f52b201f"
+    },
+    {
+      "path": "tests/asr-budget.test.mjs",
+      "bytes": 2386,
+      "sha256": "63aac52b4cb6bf4bd679330743aad0babbbf78b266280eb965970401f0bce4cb"
+    },
+    {
+      "path": "tests/asr-metrics.test.mjs",
+      "bytes": 971,
+      "sha256": "d3610549e5bf7582a85dd671df98b8ad065f26e2b96407129017b2a86ea5f2af"
+    },
+    {
+      "path": "tests/benchmark-validate.test.mjs",
+      "bytes": 16656,
+      "sha256": "c9467bd58e4d424d03eccacf28dc2dc41dd07ed1641879fb257f5b7bd3b522f0"
+    },
+    {
+      "path": "tests/canary-access.test.mjs",
+      "bytes": 10091,
+      "sha256": "4bc9c12006d27f754be3308fd72aeb3a5bad622e58818f607074f0831ba9e312"
+    },
+    {
+      "path": "tests/csp-css-delivery.test.mjs",
+      "bytes": 1370,
+      "sha256": "4eab6cf2929664550b2850c5f9036935a772f0332809f40a6a19f7da27af3838"
+    },
+    {
+      "path": "tests/hosted-acceptance.test.mjs",
+      "bytes": 6400,
+      "sha256": "efbe618486862742ac4a12c1544f29220df09189982e95db6803c18d1e776c05"
+    },
+    {
+      "path": "tests/oracle-deployment.test.mjs",
+      "bytes": 10487,
+      "sha256": "1f4dc6df0debc9e209ab79759088e77a2e340b28029196373eae677bf74102f1"
+    },
+    {
+      "path": "tests/patience-controller.test.mjs",
+      "bytes": 16518,
+      "sha256": "67a56db06f1f28435ece2f9d8ae6b9376621524d5c705dc872e7a152099a071d"
+    },
+    {
+      "path": "tests/pause-frame-pacer.test.mjs",
+      "bytes": 6375,
+      "sha256": "46117cb543c7d20dfd9b671a7aebe6dd17bb4413d78ec7550567acf4411f191a"
+    },
+    {
+      "path": "tests/pcm-processor.test.mjs",
+      "bytes": 9546,
+      "sha256": "a0835757fbf0ac1ff5aa6bdba8d3c5c74c7e20a89cf5f292cd2c1ce097d6b6ce"
+    },
+    {
+      "path": "tests/personalised-ui.test.mjs",
+      "bytes": 2136,
+      "sha256": "9f6f8bde992f2aa41782b691f576f60836f69bda0a9da6988e155191a0a74883"
+    },
+    {
+      "path": "tests/provider-pause-guard.test.mjs",
+      "bytes": 1928,
+      "sha256": "35e75f2467c4abffe634158cb9eb7066c7876573e1e348d89582876166bc056b"
+    },
+    {
+      "path": "tests/public-site.test.mjs",
+      "bytes": 2507,
+      "sha256": "dfa3d9c4f118fd28b6649426951bfb53cd1366db7343a50c17ba134f255e79a9"
+    },
+    {
+      "path": "tests/question-bank.test.mjs",
+      "bytes": 7171,
+      "sha256": "35e8abbfd23ac613e3e531e466e94d775a0fff875871f6f0433bbdc3ce9b4d6b"
+    },
+    {
+      "path": "tests/question-client.test.mjs",
+      "bytes": 13325,
+      "sha256": "c3698985b84937d32abe059ea3ac6ef06c7defa006171e81274417a78026d518"
+    },
+    {
+      "path": "tests/question-selector.test.mjs",
+      "bytes": 17630,
+      "sha256": "4d6fa3af8771dacc7e1d22deba28aab326a9779647baa97526c2eded736dcf0f"
+    },
+    {
+      "path": "tests/redis-engine-guard.test.mjs",
+      "bytes": 3863,
+      "sha256": "260c1d0b21f89c940e64f337facbf3745885d73d9fc6b6ba3030691e3e894405"
+    },
+    {
+      "path": "tests/redis-question-state.test.mjs",
+      "bytes": 19258,
+      "sha256": "e9ca7a0d68a420fbb99e6d75181a11c998b5995b965022c05d5df0c8335b58d6"
+    },
+    {
+      "path": "tests/replay-adversarial.test.mjs",
+      "bytes": 12751,
+      "sha256": "187d017d166fe02c49e1a644f9d755972a2144c61706f450bad0414e13e80476"
+    },
+    {
+      "path": "tests/replay-client.test.mjs",
+      "bytes": 6746,
+      "sha256": "713253011b9f2eee6ab9882b3bd3621857c7b96fc3066100bdb150c8bde1f8d1"
+    },
+    {
+      "path": "tests/replay-pacer.test.mjs",
+      "bytes": 16114,
+      "sha256": "f4095ca87c725922f6cebb21c25a2faa55bf42fbb9feafa4baae7243f6fdb358"
+    },
+    {
+      "path": "tests/replay-panel.test.mjs",
+      "bytes": 5522,
+      "sha256": "e3c1fd45c48c374c2fd4685db0142ea8312774be59dd9e3871b3aa27c7f3ee94"
+    },
+    {
+      "path": "tests/replay-run.test.mjs",
+      "bytes": 6950,
+      "sha256": "7bc7c768e6cdb36e28501340d4840e6276d2bcf76799482e05821bfa4a98db8d"
+    },
+    {
+      "path": "tests/replay-source.test.mjs",
+      "bytes": 15589,
+      "sha256": "fb442f43779e1d6c5949448da8f68c344bf0ec29c1dfa39fee074d30bbbecba8"
+    },
+    {
+      "path": "tests/review-workflow.test.mjs",
+      "bytes": 5801,
+      "sha256": "20d8d0bc1ab26bede5522ae7a786de5fa6637952ef1ffaf85ae656333e7b69b6"
+    },
+    {
+      "path": "tests/showcase-audio.test.mjs",
+      "bytes": 1824,
+      "sha256": "3a570312b9fb7ec3c0f99135bebe8b3166db2af7bc9e795e1b11896eec7450f2"
+    },
+    {
+      "path": "tests/showcase-contract.test.mjs",
+      "bytes": 5835,
+      "sha256": "c39c9a830bc3979a31fcbe1e63128f25e0986945ed6cbd66475061523d7a39b7"
+    },
+    {
+      "path": "tests/streaming-client.test.mjs",
+      "bytes": 44853,
+      "sha256": "62a3fb72c40edad93b611988762a52f688fe9c96de544c6c8ce2f913bbdfa70a"
+    },
+    {
+      "path": "tests/submission-metadata.test.mjs",
+      "bytes": 8577,
+      "sha256": "348fedfee9af3ad373efcd23e4b6a29444ca8ec696426bc5dfaf35863f266b0e"
+    },
+    {
+      "path": "tests/submission-preflight.test.mjs",
+      "bytes": 6314,
+      "sha256": "55dad86a3b8cbb452a6c227073322ea0f6301deea34d5f3b1ce34771992daa7f"
+    },
+    {
+      "path": "tests/vercel-build.test.mjs",
+      "bytes": 5665,
+      "sha256": "04abfab06f2258b1c6f954e8e2ee15c6217f5606550d887247e321342fa3be8f"
+    },
+    {
+      "path": "tests/vercel-health.test.mjs",
+      "bytes": 1998,
+      "sha256": "15af888e1eaeb789d217e2c0b455f82ac5ad09e0a8d0a9ec006de3bf11f5b4e3"
+    },
+    {
+      "path": "tests/vercel-question.test.mjs",
+      "bytes": 26615,
+      "sha256": "63a723654e5490ee4d6f2049b9e612ab2cb10ea7514bda31958d4a24b04955d1"
+    },
+    {
+      "path": "tests/vercel-redis-state.test.mjs",
+      "bytes": 17281,
+      "sha256": "86a77d8f754808a51e17619177ba6a43b4605cc0c35e5e91748f077de95a467a"
+    },
+    {
+      "path": "tests/vercel-state-init.test.mjs",
+      "bytes": 16526,
+      "sha256": "6bf956b55c2527b964a89c540dba53d5f4da5abe74923956cb1af2b90a9e7077"
+    },
+    {
+      "path": "tests/vercel-upload-boundary.test.mjs",
+      "bytes": 551,
+      "sha256": "e680e96548c1c98d07875af4323ffb271b2ccb755489892a029948eb8f790d95"
+    },
+    {
+      "path": "tests/vercel-voice.test.mjs",
+      "bytes": 34643,
+      "sha256": "4e50107727d271a038b3f10db778d9259c391b6c1c14cee0ffb2e7023291d194"
+    },
+    {
+      "path": "tests/voice-capabilities.test.mjs",
+      "bytes": 3473,
+      "sha256": "656cbdb4f2a3ffb290ddbb7df269e8284bd7af1b4f53114f4bcc64dd53d5d5f6"
+    },
+    {
+      "path": "tests/voice-client.test.mjs",
+      "bytes": 38118,
+      "sha256": "47e661ed26d1e13af4f28fa8a729375286c45928175c7834636702f2cbf0fcb8"
+    },
+    {
+      "path": "tests/voice-facade.test.mjs",
+      "bytes": 30962,
+      "sha256": "09a48f80e77268c531bc1494a4224b48c0229dec52dbecc885bffe36e9cae7a3"
+    },
+    {
+      "path": "tests/voice-timing.test.mjs",
+      "bytes": 10522,
+      "sha256": "664b2bb536c8d879fa6a9d731887d420224cbd68ad1ec8e1e756b177eacd48bb"
+    },
+    {
+      "path": "tests/voice-ui-contract.test.mjs",
+      "bytes": 10922,
+      "sha256": "0096b5c85466bc3c86869ea7a5bfd0f9d7555587de98da5f7c7be89c229aa869"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 2054,
+      "sha256": "11a7806223db0edeafe47ad35ed9eea2e1a5292e02f7b790f21bd0684a8a3fde"
+    },
+    {
+      "path": "vite.config.js",
+      "bytes": 1200,
+      "sha256": "e0b36bc12da25543919e419583bd417dc78d2d426a6c2cbe5e4aaebc6c3548df"
+    },
+    {
+      "path": "voice/index.html",
+      "bytes": 1367,
+      "sha256": "e212d7420550115e09d986729907d9fc275346c084ccd37a66346bc328fa9476"
+    }
+  ]
+}

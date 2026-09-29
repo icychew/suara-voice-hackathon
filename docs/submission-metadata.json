@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "suara.submission_metadata/2",
+  "status": "draft_pending_external_gates",
+  "submissionMade": false,
+  "event": {
+    "name": "AssemblyAI - Voice Agent Hackathon",
+    "officialUrl": "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon",
+    "buildWindowStart": "2026-09-01",
+    "buildWindowEnd": "2026-09-30",
+    "exactSubmissionDeadline": "2026-09-30T15:00:00Z",
+    "deadlineTimezone": "UTC (2026-09-30 23:00 Asia/Kuala_Lumpur)",
+    "deadlineStatus": "confirmed_from_official_event_schedule_2026-09-27"
+  },
+  "project": {
+    "title": "Suara: Patient Interviews for Family Memory",
+    "summary": "Suara explores patient voice interviews for family memory with AssemblyAI, a Malaysian trilingual interface and source-linked quote previews. The site is live; human recording and outcome claims remain on hold.",
+    "longDescription": "Suara explores patient family-memory interviews using AssemblyAI's adaptive baseline, an experimental patient configuration and a Streaming prototype. Patient settings require an exact provider echo; benefit is unproven.\n\nThe live site has Bahasa Malaysia, English and Simplified Chinese interface copy. Its synthetic walkthrough now plays generated narration, follows timed excerpts, changes playback speed and exports selected, reviewed fictional quotes. These prepared transcripts are not live ASR. Managed speech is configured for English/Mandarin input with English replies; Malay live speech and code-switching accuracy are not claimed.\n\nHuman recording remains on hold pending provider data controls, participant consent, restricted storage and independent review. Managed sessions are recorded by the provider; browser reset does not delete those recordings. Suara's token routes receive no audio/transcripts. Optional AI questions are default-off and can forward at most two final-answer excerpts through AssemblyAI LLM Gateway and its model provider.\n\nOn 29 September, 716 automated tests passed; 15 credential-free hosted checks passed (static/health only). A paid public-data pilot completed 36 transcriptions of 12 CC-BY-4.0 FLEURS clips across three configurations. Context hints worsened Mandarin development errors and were not promoted. A tiny held-out subset is pipeline evidence, not a general accuracy claim; no model weights were trained.\n\nA separate synthetic English managed interview passed source-anchor, question-order and clean-end checks, with reply audio received. No physical microphone or human-heard response was verified. Reviewed quote arrangement is implemented; an AI-authored memoir, older-adult benefit and production readiness remain unproven.\n\nThe sanitized source package and submission materials are being finalized. No hackathon submission has been made.",
+    "teamMembers": null,
+    "teamStatus": "pending_confirmation",
+    "categoryTags": null,
+    "tagsStatus": "pending_platform_selection"
+  },
+  "plannedStack": [
+    {
+      "name": "AssemblyAI Voice Agent API",
+      "role": "Managed voice conversation and temporary session tokens"
+    },
+    {
+      "name": "React",
+      "role": "Trilingual voice interface and local evidence preview"
+    },
+    {
+      "name": "Browser Web Audio and WebSocket",
+      "role": "Native-rate capture, resampling, streamed events and spoken playback"
+    },
+    {
+      "name": "Node.js",
+      "role": "Access-controlled temporary token service"
+    },
+    {
+      "name": "Vercel",
+      "role": "Current public host; static delivery and health passed a credential-free 15-check probe"
+    },
+    {
+      "name": "Upstash Redis",
+      "role": "Shared-quota adapter; protected live voice state was not exercised by the credential-free probe"
+    },
+    {
+      "name": "Oracle Cloud",
+      "role": "Deferred migration option, not the current hosting target"
+    }
+  ],
+  "submissionAssets": {
+    "application": {
+      "url": "https://suara-voice.vercel.app",
+      "status": "verified_static_and_health_voice_e2e_pending"
+    },
+    "repository": {
+      "url": null,
+      "status": "pending_publication_of_validated_local_candidate"
+    },
+    "video": {
+      "url": null,
+      "status": "pending_live_demo_rerecord_and_publication"
+    },
+    "slides": {
+      "url": null,
+      "status": "pending_live_results_review_and_publication"
+    },
+    "cover": {
+      "url": null,
+      "status": "pending_maintainer_selection_and_publication"
+    },
+    "submissionEntry": {
+      "url": null,
+      "status": "pending_final_submission"
+    }
+  },
+  "verification": {
+    "liveProviderVerified": false,
+    "onlineDemoVerified": false,
+    "realMicrophoneHeardReplyVerified": false,
+    "matchedThreeArmBenchmarkVerified": false,
+    "independentBlindScoringVerified": false,
+    "signedOutSecondDeviceVerified": false,
+    "finalVideoVerified": false,
+    "patientBenefitValidated": false,
+    "customizedGeneratedMemoirImplemented": false,
+    "productionReady": false
+  },
+  "guidance": {
+    "requirementsBasis": "event_form_step_one_and_general_guidance",
+    "titleMinCharacters": 5,
+    "titleMaxCharacters": 50,
+    "summaryMinCharacters": 50,
+    "summaryMaxCharacters": 255,
+    "longDescriptionMinWords": 100,
+    "longDescriptionMinCharacters": 600,
+    "longDescriptionMaxCharacters": 2000,
+    "generalVideoMaxSeconds": 300,
+    "internalVideoTargetSeconds": 180,
+    "eventSpecificVideoLimit": null,
+    "sourcesCheckedOn": "2026-09-27",
+    "formUrl": "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon/project-suara/submission",
+    "formCheckedOn": "2026-09-06",
+    "formStepsVerified": [
+      1
+    ],
+    "sources": [
+      "https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon",
+      "https://lablab.ai/guide",
+      "https://lablab.ai/guide/ai-hackathons",
+      "https://lablab.ai/ai-articles/hackathon-guidelines"
+    ]
+  }
+}

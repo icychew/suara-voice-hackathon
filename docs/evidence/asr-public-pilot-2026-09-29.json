@@ -1,0 +1,879 @@
+{
+  "schema": "suara.public_asr_pilot/1",
+  "date": "2026-09-29",
+  "status": "complete",
+  "weightTrainingPerformed": false,
+  "defaultChanged": false,
+  "uniqueAudioSeconds": 116.42,
+  "providerCalls": 36,
+  "observedChargeUsd": 0.02289,
+  "manifestSha256": "641fbab2dc10abe91d7514b2c4489055672677312c0dbc491939f97ed3c2e56d",
+  "source": "https://huggingface.co/datasets/google/fleurs",
+  "license": "CC-BY-4.0",
+  "attribution": "Conneau et al. (2022), FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech.",
+  "selection": "Published validation rows 0-2 for development, rows 10-12 for local holdout, English and Mandarin. Published test viewer unavailable (500/501); these are not the official FLEURS test split. Frozen before provider evaluation.",
+  "plan": {
+    "schema": "suara.asr_evaluation/1",
+    "createdAt": "2026-09-29T02:46:33.084Z",
+    "items": 12,
+    "profiles": [
+      {
+        "id": "universal-2",
+        "speech_models": [
+          "universal-2"
+        ]
+      },
+      {
+        "id": "universal-3-5-pro",
+        "speech_models": [
+          "universal-3-5-pro"
+        ]
+      },
+      {
+        "id": "oral-history-context",
+        "speech_models": [
+          "universal-3-5-pro"
+        ],
+        "prompt": "An oral-history interview about childhood, family shops, food, dates and everyday memories in Malaysia, in English or Mandarin.",
+        "keyterms_prompt": [
+          "Klang",
+          "Selangor",
+          "kuih",
+          "nasi lemak",
+          "巴生",
+          "雪兰莪",
+          "年糕"
+        ]
+      }
+    ],
+    "estimatedUpperUsd": 0.04850833333333332,
+    "maxUsd": 1,
+    "source": "https://huggingface.co/datasets/google/fleurs",
+    "license": "CC-BY-4.0",
+    "scoring": "English normalized word errors; Mandarin normalized character errors; no numeric rewriting; micro averages by language and split.",
+    "limitation": "Small fixed read-speech subset; model training overlap unknown; not Malaysian oral-history or live-agent quality proof."
+  },
+  "summary": [
+    {
+      "split": "validation",
+      "language": "en",
+      "profile": "universal-2",
+      "clips": 3,
+      "errors": 6,
+      "units": 69,
+      "rate": 0.08695652173913043
+    },
+    {
+      "split": "validation",
+      "language": "en",
+      "profile": "universal-3-5-pro",
+      "clips": 3,
+      "errors": 6,
+      "units": 69,
+      "rate": 0.08695652173913043
+    },
+    {
+      "split": "validation",
+      "language": "en",
+      "profile": "oral-history-context",
+      "clips": 3,
+      "errors": 6,
+      "units": 69,
+      "rate": 0.08695652173913043
+    },
+    {
+      "split": "validation",
+      "language": "zh",
+      "profile": "universal-2",
+      "clips": 3,
+      "errors": 1,
+      "units": 105,
+      "rate": 0.009523809523809525
+    },
+    {
+      "split": "validation",
+      "language": "zh",
+      "profile": "universal-3-5-pro",
+      "clips": 3,
+      "errors": 2,
+      "units": 105,
+      "rate": 0.01904761904761905
+    },
+    {
+      "split": "validation",
+      "language": "zh",
+      "profile": "oral-history-context",
+      "clips": 3,
+      "errors": 3,
+      "units": 105,
+      "rate": 0.02857142857142857
+    },
+    {
+      "split": "test",
+      "language": "en",
+      "profile": "universal-2",
+      "clips": 3,
+      "errors": 0,
+      "units": 60,
+      "rate": 0
+    },
+    {
+      "split": "test",
+      "language": "en",
+      "profile": "universal-3-5-pro",
+      "clips": 3,
+      "errors": 0,
+      "units": 60,
+      "rate": 0
+    },
+    {
+      "split": "test",
+      "language": "en",
+      "profile": "oral-history-context",
+      "clips": 3,
+      "errors": 0,
+      "units": 60,
+      "rate": 0
+    },
+    {
+      "split": "test",
+      "language": "zh",
+      "profile": "universal-2",
+      "clips": 3,
+      "errors": 1,
+      "units": 57,
+      "rate": 0.017543859649122806
+    },
+    {
+      "split": "test",
+      "language": "zh",
+      "profile": "universal-3-5-pro",
+      "clips": 3,
+      "errors": 0,
+      "units": 57,
+      "rate": 0
+    },
+    {
+      "split": "test",
+      "language": "zh",
+      "profile": "oral-history-context",
+      "clips": 3,
+      "errors": 0,
+      "units": 57,
+      "rate": 0
+    }
+  ],
+  "samples": [
+    {
+      "id": "fleurs-en_us-validation-0",
+      "language": "en",
+      "split": "validation",
+      "sourceSplit": "validation",
+      "rowIndex": 0,
+      "sourceId": 1548,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 6.54,
+      "sha256": "048169439c0328b758349af74aeb54a82a7a476e309709eb791dced06db25d48"
+    },
+    {
+      "id": "fleurs-en_us-validation-1",
+      "language": "en",
+      "split": "validation",
+      "sourceSplit": "validation",
+      "rowIndex": 1,
+      "sourceId": 1620,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 16.38,
+      "sha256": "5fefdcd12d4c136762cc7841b084126fc60c6d6410f983cc9f82b6cfc45737a2"
+    },
+    {
+      "id": "fleurs-en_us-validation-2",
+      "language": "en",
+      "split": "validation",
+      "sourceSplit": "validation",
+      "rowIndex": 2,
+      "sourceId": 1510,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 7.92,
+      "sha256": "e5664ae10a6273fbe0009068e512f4c416cccbeff19d3d2d11e5fb8d72d03fb7"
+    },
+    {
+      "id": "fleurs-en_us-test-10",
+      "language": "en",
+      "split": "test",
+      "sourceSplit": "validation",
+      "rowIndex": 10,
+      "sourceId": 1560,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 7.32,
+      "sha256": "5458485def19263ab7a1c9a54ce9f289db0be234ee39026c0a897c3c5fb2d9cf"
+    },
+    {
+      "id": "fleurs-en_us-test-11",
+      "language": "en",
+      "split": "test",
+      "sourceSplit": "validation",
+      "rowIndex": 11,
+      "sourceId": 1536,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 8.16,
+      "sha256": "409c1b0f2e86fbc7996c1122e8ccbd0ff30bae145395b456e4ffa6b8c8279c12"
+    },
+    {
+      "id": "fleurs-en_us-test-12",
+      "language": "en",
+      "split": "test",
+      "sourceSplit": "validation",
+      "rowIndex": 12,
+      "sourceId": 1619,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 7.08,
+      "sha256": "8158e33c12cdac6cf30ae4d64c8f5ca0f3e28daf184850d782126b1c8d4e9ad6"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-validation-0",
+      "language": "zh",
+      "split": "validation",
+      "sourceSplit": "validation",
+      "rowIndex": 0,
+      "sourceId": 1579,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 18.38,
+      "sha256": "f3e12a114bedbc867e06bfb7aceb2721701aa729685b9e4be39f2b98305b72ab"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-validation-1",
+      "language": "zh",
+      "split": "validation",
+      "sourceSplit": "validation",
+      "rowIndex": 1,
+      "sourceId": 1605,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 7.44,
+      "sha256": "577a635c2261680c61dda5fecbc4f83bff6f37f453665b8d9d1a68f210f57c0a"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-validation-2",
+      "language": "zh",
+      "split": "validation",
+      "sourceSplit": "validation",
+      "rowIndex": 2,
+      "sourceId": 1581,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 7.56,
+      "sha256": "8234c830aba9500be3c32dab1f91e72599b9bb03c36f962ae8b6bfc174ca13f0"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-test-10",
+      "language": "zh",
+      "split": "test",
+      "sourceSplit": "validation",
+      "rowIndex": 10,
+      "sourceId": 1640,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 13.92,
+      "sha256": "9517fcaf0f74eaa21083438b52c5a36efdef0c2c6473be21c1315af153e19d56"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-test-11",
+      "language": "zh",
+      "split": "test",
+      "sourceSplit": "validation",
+      "rowIndex": 11,
+      "sourceId": 1554,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 5.58,
+      "sha256": "740b099bcbe2ef18d0605505bdf34494086b2422ce9677b4ab92bc056780aeff"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-test-12",
+      "language": "zh",
+      "split": "test",
+      "sourceSplit": "validation",
+      "rowIndex": 12,
+      "sourceId": 1577,
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "duration": 10.14,
+      "sha256": "4a7ff7077e325f40eca6b1f133aa6583abba63061ef658ad90976d1cfcbbc688"
+    }
+  ],
+  "results": [
+    {
+      "sample": "fleurs-en_us-validation-0",
+      "language": "en",
+      "split": "validation",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 15,
+        "hypothesisUnits": 15,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 7
+    },
+    {
+      "sample": "fleurs-en_us-validation-0",
+      "language": "en",
+      "split": "validation",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 15,
+        "hypothesisUnits": 15,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 7
+    },
+    {
+      "sample": "fleurs-en_us-validation-0",
+      "language": "en",
+      "split": "validation",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 15,
+        "hypothesisUnits": 15,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 7
+    },
+    {
+      "sample": "fleurs-en_us-validation-1",
+      "language": "en",
+      "split": "validation",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 4,
+        "referenceUnits": 33,
+        "hypothesisUnits": 33,
+        "rate": 0.12121212121212122
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 17
+    },
+    {
+      "sample": "fleurs-en_us-validation-1",
+      "language": "en",
+      "split": "validation",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 4,
+        "referenceUnits": 33,
+        "hypothesisUnits": 33,
+        "rate": 0.12121212121212122
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 17
+    },
+    {
+      "sample": "fleurs-en_us-validation-1",
+      "language": "en",
+      "split": "validation",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 4,
+        "referenceUnits": 33,
+        "hypothesisUnits": 33,
+        "rate": 0.12121212121212122
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 17
+    },
+    {
+      "sample": "fleurs-en_us-validation-2",
+      "language": "en",
+      "split": "validation",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 2,
+        "referenceUnits": 21,
+        "hypothesisUnits": 20,
+        "rate": 0.09523809523809523
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-validation-2",
+      "language": "en",
+      "split": "validation",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 2,
+        "referenceUnits": 21,
+        "hypothesisUnits": 20,
+        "rate": 0.09523809523809523
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-validation-2",
+      "language": "en",
+      "split": "validation",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 2,
+        "referenceUnits": 21,
+        "hypothesisUnits": 20,
+        "rate": 0.09523809523809523
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-0",
+      "language": "zh",
+      "split": "validation",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 44,
+        "hypothesisUnits": 44,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 19
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-0",
+      "language": "zh",
+      "split": "validation",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 44,
+        "hypothesisUnits": 44,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 19
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-0",
+      "language": "zh",
+      "split": "validation",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 44,
+        "hypothesisUnits": 44,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 19
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-1",
+      "language": "zh",
+      "split": "validation",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 1,
+        "referenceUnits": 35,
+        "hypothesisUnits": 35,
+        "rate": 0.02857142857142857
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-1",
+      "language": "zh",
+      "split": "validation",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 1,
+        "referenceUnits": 35,
+        "hypothesisUnits": 36,
+        "rate": 0.02857142857142857
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-1",
+      "language": "zh",
+      "split": "validation",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 2,
+        "referenceUnits": 35,
+        "hypothesisUnits": 36,
+        "rate": 0.05714285714285714
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-2",
+      "language": "zh",
+      "split": "validation",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 26,
+        "hypothesisUnits": 26,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-2",
+      "language": "zh",
+      "split": "validation",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 1,
+        "referenceUnits": 26,
+        "hypothesisUnits": 26,
+        "rate": 0.038461538461538464
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-validation-2",
+      "language": "zh",
+      "split": "validation",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 1,
+        "referenceUnits": 26,
+        "hypothesisUnits": 26,
+        "rate": 0.038461538461538464
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-test-10",
+      "language": "en",
+      "split": "test",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 17,
+        "hypothesisUnits": 17,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-test-10",
+      "language": "en",
+      "split": "test",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 17,
+        "hypothesisUnits": 17,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-test-10",
+      "language": "en",
+      "split": "test",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 17,
+        "hypothesisUnits": 17,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-test-11",
+      "language": "en",
+      "split": "test",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 24,
+        "hypothesisUnits": 24,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 9
+    },
+    {
+      "sample": "fleurs-en_us-test-11",
+      "language": "en",
+      "split": "test",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 24,
+        "hypothesisUnits": 24,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 9
+    },
+    {
+      "sample": "fleurs-en_us-test-11",
+      "language": "en",
+      "split": "test",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 24,
+        "hypothesisUnits": 24,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 9
+    },
+    {
+      "sample": "fleurs-en_us-test-12",
+      "language": "en",
+      "split": "test",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 19,
+        "hypothesisUnits": 19,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-test-12",
+      "language": "en",
+      "split": "test",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 19,
+        "hypothesisUnits": 19,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-en_us-test-12",
+      "language": "en",
+      "split": "test",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "WER",
+        "errors": 0,
+        "referenceUnits": 19,
+        "hypothesisUnits": 19,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 8
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-10",
+      "language": "zh",
+      "split": "test",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 1,
+        "referenceUnits": 30,
+        "hypothesisUnits": 30,
+        "rate": 0.03333333333333333
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 14
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-10",
+      "language": "zh",
+      "split": "test",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 30,
+        "hypothesisUnits": 30,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 14
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-10",
+      "language": "zh",
+      "split": "test",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 30,
+        "hypothesisUnits": 30,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 14
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-11",
+      "language": "zh",
+      "split": "test",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 14,
+        "hypothesisUnits": 14,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 6
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-11",
+      "language": "zh",
+      "split": "test",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 14,
+        "hypothesisUnits": 14,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 6
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-11",
+      "language": "zh",
+      "split": "test",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 14,
+        "hypothesisUnits": 14,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 6
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-12",
+      "language": "zh",
+      "split": "test",
+      "profile": "universal-2",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 13,
+        "hypothesisUnits": 13,
+        "rate": 0
+      },
+      "modelUsed": "universal-2",
+      "audioSeconds": 11
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-12",
+      "language": "zh",
+      "split": "test",
+      "profile": "universal-3-5-pro",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 13,
+        "hypothesisUnits": 13,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 11
+    },
+    {
+      "sample": "fleurs-cmn_hans_cn-test-12",
+      "language": "zh",
+      "split": "test",
+      "profile": "oral-history-context",
+      "status": "completed",
+      "score": {
+        "metric": "CER",
+        "errors": 0,
+        "referenceUnits": 13,
+        "hypothesisUnits": 13,
+        "rate": 0
+      },
+      "modelUsed": "universal-3-5-pro",
+      "audioSeconds": 11
+    }
+  ],
+  "decision": "Do not promote context hints: Mandarin development regression; insufficient data for a general model winner."
+}

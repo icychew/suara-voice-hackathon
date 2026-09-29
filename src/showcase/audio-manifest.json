@@ -1,0 +1,86 @@
+{
+  "schema": "suara.synthetic_audio/1",
+  "generator": "edge-tts 7.2.8",
+  "sampleRate": 24000,
+  "synthetic": true,
+  "lanes": {
+    "ms": {
+      "src": "/assets/synthetic/ms-family-memory.wav",
+      "voice": "ms-MY-YasminNeural",
+      "duration": 14.874,
+      "sha256": "d7014fdec8cd70a71a4d40ff0d5f0f83779c4f31fd5ac90951b7c210f645cb15",
+      "segments": [
+        {
+          "id": "E1",
+          "start": 0,
+          "end": 3.168,
+          "text": "Saya dibesarkan di Klang."
+        },
+        {
+          "id": "E2",
+          "start": 3.518,
+          "end": 9.086,
+          "text": "Kedai keluarga kami dibuka pada tahun 1978."
+        },
+        {
+          "id": "E3",
+          "start": 9.436,
+          "end": 14.524,
+          "text": "Setiap Tahun Baharu, kami membuat kuih bersama-sama."
+        }
+      ]
+    },
+    "en": {
+      "src": "/assets/synthetic/en-family-memory.wav",
+      "voice": "en-US-JennyNeural",
+      "duration": 11.202,
+      "sha256": "70e197d9c7ceece0a19e7d44f1ffd1926cc6d54f9e829085b0a1c4a07f065ac6",
+      "segments": [
+        {
+          "id": "E1",
+          "start": 0,
+          "end": 2.304,
+          "text": "I grew up in Klang."
+        },
+        {
+          "id": "E2",
+          "start": 2.654,
+          "end": 6.59,
+          "text": "Our family shop opened in 1978."
+        },
+        {
+          "id": "E3",
+          "start": 6.94,
+          "end": 10.852,
+          "text": "Every New Year, we made rice cakes together."
+        }
+      ]
+    },
+    "zh": {
+      "src": "/assets/synthetic/zh-family-memory.wav",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "duration": 10.218,
+      "sha256": "44116ff1853e8a3dc154dc4534882add0b04886769f8c8838ff900ad7c81189d",
+      "segments": [
+        {
+          "id": "E1",
+          "start": 0,
+          "end": 2.064,
+          "text": "我在巴生长大。"
+        },
+        {
+          "id": "E2",
+          "start": 2.414,
+          "end": 6.182,
+          "text": "我们家的商店在一九七八年开业。"
+        },
+        {
+          "id": "E3",
+          "start": 6.532,
+          "end": 9.868,
+          "text": "每逢新年，我们一起做年糕。"
+        }
+      ]
+    }
+  }
+}
