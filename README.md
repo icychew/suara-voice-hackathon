@@ -11,6 +11,13 @@ Mandarin narration, timed transcript seeking, playback speed controls and a
 download containing only selected, approved fictional excerpts. These prepared
 scripts are not live ASR. Audio provenance is documented in licenses.
 
+The review draft also has a selectable text preview in all three interface
+languages when a browser download does not start.
+
+Offline benchmark scheduling and the complete attempt-ledger workflow are
+documented in docs/BENCHMARK_PREPARATION.md. This preparation leaves all human
+attempts NOT_RUN and does not authorize recording or provider use.
+
 The offline accuracy workflow compares three AssemblyAI configurations against
 a fixed, licensed public-speech corpus. See docs/ACCURACY_WORKFLOW_2026-09-29.md
 for the measured pilot, budget controls and the separate development/holdout

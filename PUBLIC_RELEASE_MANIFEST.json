@@ -1,9 +1,9 @@
 {
   "schemaVersion": "suara.public_release_candidate/1",
   "status": "local_candidate_not_published",
-  "revision": "v15",
-  "fileCount": 153,
-  "generatedAt": "2026-09-29T11:08:18.2491536+08:00",
+  "revision": "v16",
+  "fileCount": 155,
+  "generatedAt": "2026-09-29T16:47:53.2025492+08:00",
   "license": "MIT",
   "privacyScan": "pass",
   "excluded": [
@@ -29,13 +29,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 390,
-      "sha256": "695e27c1a2c4a0e127aa45bc5fe2ae8843564b444d7660de5269ec491e9d5a9f"
+      "bytes": 408,
+      "sha256": "5d1910c0c1c13c39532005478d7dd814691371ef7e405b19b4b45705ab67c959"
     },
     {
       "path": ".vercelignore",
-      "bytes": 447,
-      "sha256": "f3c56b4bdad62ad9d1c211315d0ba554f8ebac0d7ec3e2138914de177756d58c"
+      "bytes": 474,
+      "sha256": "7037b3941f806c86fc24bda8415eb2b3828fecc1ab81cbb83c54cb8a381bc4e4"
     },
     {
       "path": "api/capabilities.js",
@@ -138,14 +138,19 @@
       "sha256": "d38cba26ba9f94e9fe22dcf3706b536c314373ef4871391203dd163a98a82c76"
     },
     {
+      "path": "docs/BENCHMARK_PREPARATION.md",
+      "bytes": 4101,
+      "sha256": "b107f2f69ac9eae836e2a638caa2c790382ca72268c1e12ff2bf34747f54f852"
+    },
+    {
       "path": "docs/evidence/asr-public-pilot-2026-09-29.json",
       "bytes": 23735,
       "sha256": "8a123aa11c58859c6e3508243d09d3a29656e3e452c6250775219f072e63d4ff"
     },
     {
       "path": "docs/submission-metadata.json",
-      "bytes": 5979,
-      "sha256": "12d0a39936c1299e5a9cb9037c45f72ce60dcdf05db524d44c4f286c8d0a06e5"
+      "bytes": 6808,
+      "sha256": "cd240602f312dad1dfc1ffd038d3bffd4004c83db9c4792103b9cc6271aa1cde"
     },
     {
       "path": "index.html",
@@ -224,13 +229,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 3675,
-      "sha256": "1a9ffdd44d8991fefe01c660741280529702cdb53da6ece725a33520df929069"
+      "bytes": 4022,
+      "sha256": "6a4021a1115d9b95d908755c72227c43c046fcd1903699fd1fd39cf520a53ae1"
     },
     {
       "path": "scripts/asr-metrics.mjs",
       "bytes": 1186,
       "sha256": "9e7c71dececbc2dfb664a60e299bef93897419426a980aaffcc385ceba8fb7b6"
+    },
+    {
+      "path": "scripts/benchmark-plan.mjs",
+      "bytes": 5714,
+      "sha256": "f753651073027307aeb8e397d44aacc98b2db39631f2035854077ca802397ea4"
     },
     {
       "path": "scripts/benchmark-validate.mjs",
@@ -444,8 +454,8 @@
     },
     {
       "path": "src/showcase.css",
-      "bytes": 25439,
-      "sha256": "cc094a24779a9e96482b9777e1c3494ec411f65bdd44a4eac2bf4fe5ada34ee0"
+      "bytes": 26117,
+      "sha256": "b0bb000db1b6f2aa016f471a08a99079846429939cf56c547ca506836dc5ccc0"
     },
     {
       "path": "src/showcase/audio-manifest.json",
@@ -454,8 +464,8 @@
     },
     {
       "path": "src/showcase/copy.js",
-      "bytes": 18141,
-      "sha256": "a81da8b65c4d0008da5dfdf61b0587cbb78b25c13b6116fa4f9aaf65d41f872b"
+      "bytes": 18815,
+      "sha256": "309311216fd2935112c7e839b5d4f502ab2e8ee305c8b203c4006940590d49da"
     },
     {
       "path": "src/showcase/export.js",
@@ -479,8 +489,8 @@
     },
     {
       "path": "src/showcase/ShowcaseApp.jsx",
-      "bytes": 22666,
-      "sha256": "3045a26bf968f8cfa5876f1329bb7e48ef4965adb10b1a6f67376aa919c9f133"
+      "bytes": 22899,
+      "sha256": "7f5302cef2a0aa9cfa04422733e9ff8af3b78d1c374c4d41c583aeb1414c3943"
     },
     {
       "path": "src/styles.css",
@@ -566,6 +576,11 @@
       "path": "tests/asr-metrics.test.mjs",
       "bytes": 971,
       "sha256": "d3610549e5bf7582a85dd671df98b8ad065f26e2b96407129017b2a86ea5f2af"
+    },
+    {
+      "path": "tests/benchmark-plan.test.mjs",
+      "bytes": 4614,
+      "sha256": "9338f18e1430507ccfd731118f3fee5073485a2265c1e61430ddecc95cf86f28"
     },
     {
       "path": "tests/benchmark-validate.test.mjs",
@@ -696,11 +711,6 @@
       "path": "tests/streaming-client.test.mjs",
       "bytes": 44853,
       "sha256": "62a3fb72c40edad93b611988762a52f688fe9c96de544c6c8ce2f913bbdfa70a"
-    },
-    {
-      "path": "tests/submission-metadata.test.mjs",
-      "bytes": 8577,
-      "sha256": "348fedfee9af3ad373efcd23e4b6a29444ca8ec696426bc5dfaf35863f266b0e"
     },
     {
       "path": "tests/submission-preflight.test.mjs",

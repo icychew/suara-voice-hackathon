@@ -82,6 +82,11 @@
 .showcase-player__transcript button span:first-child { font-size: 12px; font-weight: 750; }
 .showcase-player button:focus-visible, .showcase-player select:focus-visible, .showcase-export:focus-visible { outline: 3px solid #c35036; outline-offset: 3px; }
 .showcase-export { display: block; width: 100%; border: 0; border-radius: 8px; padding: 14px; background: #173e3b; color: white; font-weight: 700; cursor: pointer; text-align: center; text-decoration: none; }
+.showcase-export-preview { margin-top: 14px; min-width: 0; color: #173e3b; }
+.showcase-export-preview summary { cursor: pointer; padding: 8px 0; font-weight: 700; }
+.showcase-export-preview p { font-size: 13px; line-height: 1.6; }
+.showcase-export-preview pre { display: block; width: 100%; min-width: 0; max-height: 360px; overflow: auto; padding: 12px; border: 1px solid #bacdca; border-radius: 8px; background: #f7faf8; color: #213e3b; font: 13px/1.6 monospace; white-space: pre-wrap; overflow-wrap: anywhere; user-select: text; }
+.showcase-export-preview summary:focus-visible, .showcase-export-preview pre:focus-visible { outline: 3px solid #c35036; outline-offset: 3px; }
 
 .showcase-layout {
   display: grid;

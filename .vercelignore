@@ -18,6 +18,7 @@ scripts/qa-synthesize-pause.ps1
 scripts/evaluate-asr.mjs
 scripts/prepare-accuracy-data.mjs
 scripts/generate-showcase-audio.mjs
+scripts/benchmark-plan.mjs
 deploy
 dist-public
 dist-operator

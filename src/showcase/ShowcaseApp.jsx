@@ -221,14 +221,21 @@ function StoryStage({ copy, lane, reviewStates, selectedEvidence, onToggleEviden
   );
 }
 
-function ReviewDownload({ text, filename, label }) {
+function ReviewDownload({ text, filename, copy }) {
   const [url, setUrl] = useState(null);
   useEffect(() => {
     const next = URL.createObjectURL(new Blob([text], { type: 'text/markdown;charset=utf-8' }));
     setUrl(next);
     return () => URL.revokeObjectURL(next);
   }, [text]);
-  return <a className="showcase-export" href={url || undefined} download={filename} aria-disabled={!url}>{label}</a>;
+  return <div>
+    <a className="showcase-export" href={url || undefined} download={filename} aria-disabled={!url}>{copy.downloadDraft}</a>
+    <details className="showcase-export-preview">
+      <summary>{copy.exportPreview}</summary>
+      <p>{copy.exportFallback}</p>
+      <pre aria-label={copy.exportTextLabel} tabIndex={0}>{text}</pre>
+    </details>
+  </div>;
 }
 
 function MemoirStage({ copy, lane, reviewStates, selectedEvidence, documentLocale, onDocumentLocale, template, onTemplate }) {
@@ -243,7 +250,7 @@ function MemoirStage({ copy, lane, reviewStates, selectedEvidence, documentLocal
           <div><h2>{copy.documentLanguage}</h2><div className="showcase-choice-row">{DOCUMENT_LOCALES.map((locale) => <button aria-pressed={documentLocale === locale} className={documentLocale === locale ? "is-selected" : ""} key={locale} onClick={() => onDocumentLocale(locale)} type="button">{SHOWCASE_LOCALES.find((item) => item.id === locale).label}</button>)}</div></div>
           <div><h2>{copy.documentStyle}</h2><div className="showcase-choice-stack">{copy.styles.map((label, index) => <button aria-pressed={template === index} className={template === index ? "is-selected" : ""} key={label} onClick={() => onTemplate(index)} type="button">{label}<Icon name={template === index ? "check" : "shield"} size={17} /></button>)}</div></div>
           <p className="showcase-source-note"><Icon name="shield" size={18} />{copy.sourceNote}</p>
-          <ReviewDownload text={exportText} filename={`suara-synthetic-review-${lane.route}.md`} label={copy.downloadDraft} />
+          <ReviewDownload text={exportText} filename={`suara-synthetic-review-${lane.route}.md`} copy={copy} />
           <p className="showcase-source-note">{copy.downloadNote}</p>
         </section>
         <article className="showcase-memoir-paper">

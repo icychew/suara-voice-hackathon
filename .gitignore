@@ -20,6 +20,7 @@ output/pdf/
 output/video/
 output/release/
 output/handoff/
+output/submission/
 .release-build/
 tmp/video-review-*/
 tmp/audio-generation/
